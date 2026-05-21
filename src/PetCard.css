@@ -1,0 +1,74 @@
+.card{
+    width:300px;
+    border-radius: 10px;
+    background-color: #060d20;
+    color:white;
+    margin: 10px;
+box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;}
+
+.card-img{
+    width: 300px;
+    height:250px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.card-header{
+    position: relative;
+}
+
+.card-header-top{
+    position: absolute;
+    background-color: red;
+    right:10px;
+    margin-top:10px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.card-header-bottom{
+    position:absolute;
+    bottom: 10px;
+    background-color: #282421;
+    margin-left: 10px;
+    padding: 5px;
+}
+
+.card-bottom{
+    padding: 10px;
+}
+
+.card-bottom-name{
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.card-bottom-breed{
+    font-weight: 100;
+    margin-bottom:5px;
+}
+
+.card-bottom-specialty{
+    font-weight: 25;
+    margin-bottom:2px
+}
+
+.card-bottom-info{
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.card-bottom-button{
+ display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-btn-pet{
+    width: 100%;
+    padding:5px;
+    background-color:red;
+    border:none;
+    border-radius: 5px;
+    color:white;
+}
