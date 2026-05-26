@@ -129,19 +129,19 @@ const spyAgents = [
         <div className='home-hero'>
             <img className="spypetimg" src={spypet} alt="spy pet"/>
           
-            <div className='hero-heading'>Security Clearance: Top Secret</div>
-            <div><h1 className='hero-title'>Recruit Elite Field Agents</h1></div>
+            <p className='hero-heading'>Security Clearance: Top Secret</p>
+           <h1 className='hero-title'>Recruit Elite Field Agents</h1>
             <div>
                 <p className='hero-description'>The P.A.W.S Agency (Paws and Whiskers Survelience) needs operatives.
                 Browse our roster of highly trained feline and canine operatives</p>
             </div>
             <div><button className='hero-btn-agent'>View Agent Roster</button></div>
         </div>
-        <div>
+        {/* <div>
             <button>All Units</button>
             <button>🐕 k9 Division</button>
             <button>🐱 Feline OPS</button>
-        </div>  
+        </div>   */}
         <div className='pet-container'>
             {list.map(map=>{
                 return <div key={map} className='pet-item' ><PetCard/> </div>

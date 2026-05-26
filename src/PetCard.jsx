@@ -3,6 +3,14 @@ import thunder from "./images/goldenthunder.jpg"
 import "./PetCard.css"
 
 const PetCard = () => {
+
+    const onClickDetails= ()=>{
+         window.open(
+      "/details",
+      "_blank",
+    );
+    }
+
   return (
     <div>
         <div className='card'>
@@ -21,7 +29,7 @@ const PetCard = () => {
                 <div className='card-bottom-breed'>Golden Retriever</div>
                 <div className='card-bottom-specialty'>Specialty</div>
                 <div className='card-bottom-info'>Explosive Detection & Coastal Infiltration</div>
-                <div className='card-bottom-button'><button className='card-btn-pet'>Recruit Golden Thunder</button></div>
+                <div className='card-bottom-button'><button className='card-btn-pet' onClick={onClickDetails}>Recruit Golden Thunder</button></div>
             </div>
 
         </div>

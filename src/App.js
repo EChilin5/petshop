@@ -1,15 +1,18 @@
 import './App.css';
 import Home from './Home';
 import PetDetails from './PetDetails';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 
 
 function App() {
   return (
-    <div className="home">
-      <Home/>
-     <PetDetails/>
-      
-    </div>
+     <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/details" element={<PetDetails />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
