@@ -123,6 +123,14 @@ const spyAgents = [
   },
 ];
 
+    const goToSection = () => {
+    document
+      .getElementById("contact")
+      .scrollIntoView({
+        behavior: "smooth"
+      });
+  };
+
 
   return (
     <div className='home-main'>
@@ -135,18 +143,20 @@ const spyAgents = [
                 <p className='hero-description'>The P.A.W.S Agency (Paws and Whiskers Survelience) needs operatives.
                 Browse our roster of highly trained feline and canine operatives</p>
             </div>
-            <div><button className='hero-btn-agent'>View Agent Roster</button></div>
+            <div><button className='hero-btn-agent'  onClick={goToSection}>View Agent Roster</button></div>
         </div>
         {/* <div>
             <button>All Units</button>
             <button>🐕 k9 Division</button>
             <button>🐱 Feline OPS</button>
         </div>   */}
+        <section id="contact">
         <div className='pet-container'>
             {list.map(map=>{
                 return <div key={map} className='pet-item' ><PetCard/> </div>
             })}
         </div>
+        </section>
     </div>
   )
 }
